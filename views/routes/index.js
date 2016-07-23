@@ -1,7 +1,11 @@
 var router = require('express').Router();
 var path = require('path');
 
+//get gif router//
 
+var gifs = require('./gif');
+
+router.use('/gif', gifs);
 
 
 
