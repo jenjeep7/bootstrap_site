@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="gifApp">
 <head>
   <meta charset="utf-8">
   <title>Jennifer Johnson</title>
@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
-<body>
+<body ng-controller="CallController">
   <div class="container">
 
 
@@ -34,8 +34,8 @@ Bring a spring upon her cable Jack Ketch trysail Jack Tar Letter of Marque furl 
         <img src="http://digitalresult.com/wp-content/uploads/2015/04/water-drops-hd-images-21.png" class="img-responsive"/>
       </div>
 
-      <div class="gif">
-
+      <div class="gif" ng-show="buttonClicked">
+        <img ng-src="{{randomGif.image_url}}" />
       </div>
       <button id="random">Get cool Gif</button>
     </div>
