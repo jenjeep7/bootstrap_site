@@ -12,6 +12,10 @@ router.use('/gif', gifs);
 router.get('/', function(request, response) {
   response.sendFile(path.join(__dirname, '../views/public/index.html'));
 });
+router.get('../slide', function(request, response) {
+  response.sendFile(path.join(__dirname, '../views/public/slide.html'));
+  console.log(response);
+});
 
 
 
