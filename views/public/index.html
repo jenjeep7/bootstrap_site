@@ -7,6 +7,7 @@
   <script src="server/vendor/angular/angular.min.js"></script>
   <script src="vendor/bootstrap/bootstrap.min.js"></script>
   <script src="server/assets/scripts/client.min.js"></script>
+  <script src="server/vendor/angular-route/angular-route.min.js"></script>
   <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
@@ -27,7 +28,7 @@
         </p>
         <i class="glyphicon glyphicon-briefcase"></i>
         <p>
-Bring a spring upon her cable Jack Ketch trysail Jack Tar Letter of Marque furl heave to galleon bilged on her anchor run a rig provost loot rigging chase pink case shot weigh anchor clipper dead men tell no tales landlubber or just lubber Arr Plate Fleet bucko avast long clothes yo-ho-ho tackle spanker jib matey wherry Pieces of Eight interloper
+          Bring a spring upon her cable Jack Ketch trysail Jack Tar Letter of Marque furl heave to galleon bilged on her anchor run a rig provost loot rigging chase pink case shot weigh anchor clipper dead men tell no tales landlubber or just lubber Arr Plate Fleet bucko avast long clothes yo-ho-ho tackle spanker jib matey wherry Pieces of Eight interloper
         </p>
       </div>
       <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 hidden-xs">
@@ -40,5 +41,12 @@ Bring a spring upon her cable Jack Ketch trysail Jack Tar Letter of Marque furl 
       <button id="random">Get cool Gif</button>
     </div>
   </div>
+
+  <section ng-app="ViewModule">
+    <div ng-view>
+
+    </div>
+
+  </section>
 </body>
 </html>

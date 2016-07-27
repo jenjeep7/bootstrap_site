@@ -1,5 +1,6 @@
 var app = angular.module("gifApp", []);
-
+//views//
+angular.module("ViewModule", ['ngRoute']);
 //slide controller
 var currentIndex = 0,
   items = $('.container div'),
